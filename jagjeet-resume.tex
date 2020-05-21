@@ -1,0 +1,212 @@
+              
+                %% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10.1pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75, top=.6in, bottom=.3in, right=.7in, left=.7in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\renewcommand*{\httplink}[2][]{%
+  \ifthenelse{\equal{#1}{}}%
+    {\href{#2}{#2}}%
+    {\href{#2}{#1}}}
+% personal data
+\name{Jagjeet}{Singh}
+%\title{Resume}                               % optional, remove / comment the line if not wanted
+\address{\centerline{
+Male 23 | Gurugram, Haryana, India
+}}
+\phone[mobile]{+91 856 707 5678}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{iamjagjeetubhi@gmail.com}                               % optional, remove / comment the line if not wanted
+\social [stackoverflow][https://github.com/iamjagjeetubhi]{github.com/iamjagjeetubhi} % added stackover flow so it shows only dot instead of any icon
+\social [stackoverflow][https://stackoverflow.com/users/4124229/jagjeet-singh]{stackoverflow.com/users/4124229/jagjeet-singh}
+\homepage {https://jagjeet.dev}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[63pt][0.3pt]{picture}                       % optional, remove / comment the line if not wanted; '63pt' is the height the picture must be resized to, 0.3pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{-30pt}
+\section{Intro Statement}
+
+\vspace{3pt}
+
+\textit{\small{I’m a Python developer that likes making web applications for the real world. \newline
+From the last three years, I was a part of engineering teams, most notably of: \href{https://gramfactory.com}{\textcolor{blue}{GramFactory}} \& \href{https://github.com/GreatDevelopers}{\textcolor{blue}{Great Developers}}. Most of the time, I am using \href{https://www.python.org/}{\textcolor{blue}{Python}} and \href{https://www.djangoproject.com/}{\textcolor{blue}{Django}} to create modern web applications and using \href{http://www.celeryproject.org/}{\textcolor{blue}{Celery}} for asynchronous tasks. The combination of my Python and DevOps skills makes me different from ordinary developers. In the same time, I am sharing my knowledge and helping others on \href{https://stackoverflow.com/users/4124229/jagjeet-singh}{\textcolor{blue}{Stack Overflow}}.}}
+
+\section{Tech Stack}
+
+\vspace{3pt}
+
+\begin{itemize}
+    \item \textbf{Python 3:} Using Python for work needs from 2016. Has a strong knowledge in Python 3. Knows how to port Python 2 code to Python 3.
+    \item \textbf{Python web-frameworks:} Using Django for building backends for different web applications. And Django Rest Framework for building Web APIs.
+    \item \textbf{JavaScript, CSS, HTML5:} Built first web site in 2012, since actively improving my experience with JavaScript, CSS, and HTML. Have a basic knowledge about React.
+    \item \textbf{Data Storages:} Using PostgreSQL as a data storage for most of the projects \& Redis as a cache layer. In same time has a production experience with Memcached.
+    \item \textbf{Infrastructure:} Has a strong feeling, that reliable infrastructure is a must for any modern web application. Knows how to deploy web applications, and how to integrate best dev practices with CI/CD.
+    Deployed applications to Amazon AWS, DigitalOcean and UpCloud.
+    \item \textbf{Developer Experience:} Using git for source management of all my projects. Working between GitHub and BitBucket. Integrating black and flake8 to every possible project via pre-commit hooks. Has confidence in enforcing code style guides for teams to help them perform better and faster.
+    \item \textbf{Other Tools:} Elasticsearch, Celery, Sentry, Jira, Swagger, AWS(EC2, RDS, S3, SNS) and vim.
+\end{itemize}
+
+\section{Experience}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+%\item{\cventry{2014--2018}{Guru Nanak Dev Engineering College}{Linux Adminstrations}{78.72\%}{\textit{Punjab, India}}{}}
+
+
+\item{\cventry{2018--Current}{GramFactory}{Full Stack Developer | DevOps}{Python/ Django}{\textit{Gurugram, Haryana, India}}{}}
+\begin{itemize}
+
+\item \textbf{Software Developer}
+\begin{itemize}
+\item Created, delivered and maintained scalable system from scratch.
+\item Extended BaseUserManager to use mobile number as username.
+\item Developed OTP module that can be used with any messaging services.
+%\item Developed Banner Management System(BMS) functional upto State, City, Pincode and Shop level.
+\item Developed multi-level ERP system.
+\item Developed Product Pricing Module functional upto State, City, Pincode and Shop level.
+%\item Developed Couponing Module functional upto State, City, Pincode and Shop level.
+\item Developed Last Mile Delivery System.
+\item Developed versioned Restful APIs with DRF.
+\item Developed Khata Book(Ledger Account Book).
+\end{itemize}
+
+\item \textbf{DevOps}
+\begin{itemize}
+\item Django app deployment using Nginx.
+\item Setting up app monitoring with the help of Sentry.
+\item Supervisor setup for running multiple Celery Queues.
+\item Setting up Let's Encrypt Wildcard Certificate for all QA machines.
+\end{itemize}
+
+\end{itemize}
+\vspace{3pt}
+
+\item{\cventry{2017--2018}{Testing and Consultancy Cell, GNDEC}{Software Engineer Intern}{Python/ Django}{\textit{Ludhiana, Punjab, India}}{}}
+\begin{itemize}
+
+\item Worked on LibreHatti(An ERP system for GNDEC).
+\begin{itemize}
+\item Implemented Product Catalogue Module.
+\item Worked on HTMLtoPDF module for generating Invoices PDF.
+\end{itemize}
+
+\end{itemize}
+\vspace{3pt}
+
+\end{itemize}
+
+
+\section{Projects}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+\item{\cventry{2018}{\href{https://github.com/iamjagjeetubhi/thepoetdotme}{https://github.com/iamjagjeetubhi/thepoetdotme}}{thepoet.me}{Django based project}{}{\vspace{3pt}A personal identity page for poets. \href{https://thepoet.me}{https://thepoet.me}}}
+
+\vspace{3pt}
+
+\item{\cventry{2018}{\href{https://play.google.com/store/apps/details?id=sikhs.mahankosh}{https://play.google.com/store/apps/details?id=sikhs.mahankosh}}{Mahan Kosh}{Android based project}{}{\vspace{3pt}Mahan Kosh Application on Play Store is a Punjabi language encyclopedia which \newline was compiled by Bhai Kahn Singh Nabha over fourteen years.
+}}
+
+
+\vspace{3pt}
+
+\item{\cventry{2017}{\href{https://github.com/iamjagjeetubhi/plzalertdotme}{https://github.com/iamjagjeetubhi/plzalertdotme}}{plzalert.me}{Django based project}{}{\vspace{3pt}
+A notification app for Training and Placement cell, \href{https://plzalert.me}{GNDEC}
+\href{https://plzalert.me}{https://plzalert.me}}}
+
+\end{itemize}
+
+
+\section{Education}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+\item{\cventry{2014--2018}{Guru Nanak Dev Engineering College}{Bachelor's Degree in Information Technology}{}{\textit{Punjab, India}}{}}
+
+%\item{\cventry{2014}{Shri Harkrishan Sahib Public Sen. Sec. School}{Higher Secondary Examination}{}{\textit{Punjab, India}}{}}  % arguments 3 to 6 can be left empty
+
+%\item{\cventry{2012}{Shri Guru Hargobind Sahib Public Sen. Sec. School}{Matriculation}{}{\textit{Punjab, India}}{}}
+
+\end{itemize}
+
+\section{Achievements}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+\item First Unicode Sikh encyclopedia with 14k+ downloads.
+\item 248K+ views and 188K+ visitors on Wordpress blog across the globe.
+%\item Completed Hackathon by DigitalOcean.
+%\item Got first prize in Dastaar Sajao competition.
+
+\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
+
